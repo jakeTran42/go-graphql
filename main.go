@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/jakeTran42/go-graphql/gql"
+	"github.com/jakeTran42/go-graphql/graphql"
 	"github.com/jakeTran42/go-graphql/postgres"
 	"github.com/jakeTran42/go-graphql/server"
 	"github.com/go-chi/chi"
