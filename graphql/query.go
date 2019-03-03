@@ -27,7 +27,7 @@ func NewRoot(db *postgres.Db) *Root {
 								Type: graphql.String,
 							},
 						},
-						Resolve: resolver.UserResolver,
+						Resolve: resolver.UserRes,
 					},
 				},
 			},
