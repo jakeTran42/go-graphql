@@ -47,7 +47,7 @@ type User struct {
 func (d *Db) GetUser(name string) []User {
 	stmt, err := d.Prepare("SELECT * FROM users WHERE name=$1")
 	if err != nil {
-		fmt.Println("GetUser Preperation Err: ", err)
+		fmt.Println("GetUser Preparation Err: ", err)
 	}
 
 	rows, err := stmt.Query(name)
