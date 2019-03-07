@@ -61,7 +61,7 @@ func (d *Db) GetUser(name string) []User {
 		err = rows.Scan(
 			&r.ID,
 			&r.Name,
-			&r.Age
+			&r.Age,
 		)
 		if err != nil {
 			fmt.Println("Error scanning rows: ", err)
