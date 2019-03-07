@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
+	// Need a comment here
 	_ "github.com/lib/pq"
 )
 
@@ -27,7 +28,7 @@ func New(conStr string) (*Db, error) {
 	return &Db{db}, nil
 }
 
-// ConnString returns a connection string when passed in parameters
+// ConStr returns a connection string when passed in parameters
 func ConStr(host string, port int, user string, dbName string) string {
 	return fmt.Sprintf(
 		"host=%s port=%d user=%s dbname=%s sslmode=disable",
@@ -35,6 +36,7 @@ func ConStr(host string, port int, user string, dbName string) string {
 	)
 }
 
+// User struct defined for db
 type User struct {
 	ID         int
 	Name       string
