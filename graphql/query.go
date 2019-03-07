@@ -1,4 +1,4 @@
-package gql
+package graphql
 
 import (
 	"github.com/jakeTran42/go-graphql/postgres"
