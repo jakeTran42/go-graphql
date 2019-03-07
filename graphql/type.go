@@ -15,7 +15,7 @@ var User = graphql.NewObject(
 			},
 			"age": &graphql.Field{
 				Type: graphql.Int,
-			}
+			},
 		},
 	},
 )
