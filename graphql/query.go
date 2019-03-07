@@ -5,7 +5,7 @@ import (
 	"github.com/graphql-go/graphql"
 )
 
-// Our root struct for querying
+// Root struct for querying
 type Root struct {
 	Query *graphql.Object
 }
